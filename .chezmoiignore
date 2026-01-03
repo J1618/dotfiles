@@ -1,0 +1,11 @@
+# If we are on Linux, ignore the Windows folders
+{{ if ne .chezmoi.os "windows" }}
+AppData
+Documents
+{{ end }}
+
+# If we are on Windows, ignore the Linux files
+{{ if eq .chezmoi.os "windows" }}
+.zshrc
+.tmux.conf
+{{ end }}
