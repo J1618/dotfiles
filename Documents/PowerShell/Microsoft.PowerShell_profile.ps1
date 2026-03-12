@@ -47,4 +47,4 @@ function conda {
 
 # --- 6. Theme Initialization (Must be last) ---
 # Disable terminal queries when using SSH
-oh-my-posh init pwsh --config "C:\Users\Jonny\.config\.mytheme.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$HOME\.config\.mytheme.omp.json" | Invoke-Expression
